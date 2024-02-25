@@ -1,6 +1,6 @@
 <head>This is my first page on the github.</head>
 
-Very happly to learn about githu.
+<h1>Very happly to learn about githu.</h1>
 
 I'll learn about python,wordpress,docker...
 
