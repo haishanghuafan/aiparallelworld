@@ -1,7 +1,11 @@
-echo "# aiparallelworld" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/haishanghuafan/aiparallelworld.git
-git push -u origin main
+This is my first page on the github.
+
+Very happly to learn about githu.
+
+I'll learn about python,wordpress,docker...
+
+Like this code under this line:
+```python
+print('Welcome to here!')
+```
+image()
