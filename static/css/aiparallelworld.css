@@ -1,0 +1,25 @@
+/*! stylesheet.css */
+header{
+    background-color: #0d6efd;
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: #20c997;
+    text-align: center;
+}
+
+footer{
+    background-color: #5c636a;
+}
+
+.section1{
+    background-color: cornflowerblue;
+    height: 200px;
+}
+
+#id1{
+    font-style: italic;
+
+}
