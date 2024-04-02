@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>活着</title>
+
+    <!-- Bootstrap & Plugins CSS -->
+	<link rel="stylesheet" href="/static/css/aiparallelworld.css">
+	<link rel="stylesheet" href="../static/plugins/fontawesome-free-6.5.1-web/css/fontawesome.css">
+	<link rel="stylesheet" href="../static/plugins/fontawesome-free-6.5.1-web/css/brands.css">
+	<link rel="stylesheet" href="../static/plugins/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/theme.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+
+<body>
+	<header	class="main-nav-container box bg_bo">
+		<div class="container-fluid px-md-0">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-nav">
+						<!-- Logo Start -->
+						<a href="https://baidu.com" class="logo pull-left d-flex align-items-center p-l-100_md">
+							<img  class="img-fluid" src="../static/img/logo.png" alt="">
+						</a>
+						<!-- Logo End -->
+						<div class="nav pull-right d-flex p-r-50 align-items-center h-80">
+							<div class="search">
+								<span><i class="fa-brands fa-searchengin"></i> </span>
+								<div class="search_box d-flex justify-content-center align-items-center box" style="">
+									<div class="col-lg-4 col-8">
+                                        <form id="form" method="get" class="form-inline" name="headfForm" role="form">
+                                            <input type="text" class="form-control w-100 rounded-pill" id="ky" onkeyup="keyEvent(event);" autocomplete="off" onkeydown="if(event.keyCode==13){window.location = '/home/search?ky=' + this.value;;return false};"  placeholder="请输入关键字...">
+                                            <div id="headsuggestion_div" class="hide">
+                                                <ul id="headsuggestions_ul"></ul>
+                                            </div>
+                                        </form>
+                                    </div>
+								</div>
+						</div>
+						</div>
+						<!-- Navigation Start -->
+						<nav  class="menu h-80">
+							<ul class="menu-container list-unstyled d-flex align-items-center justify-content-center">
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">个人网站</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/摄影.png">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">摄影人生</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/个人简历网站.png">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">个人简历</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">企业网站</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/简洁大气响应式化妆品生物科技公司网站.jpg">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">简洁大气响应式化妆品生物科技公司网站</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/大气宽屏响应式网络科技公司官网.jpg">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">大气宽屏响应式网络科技公司官网</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">网络建设与维护</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/小企业网络设计拓扑图.jpg">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">小企业网络设计拓扑图</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/大型网络设计建设.jpg">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">大型网络设计拓扑图</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">AI绘画</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/摄影2.png">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">儿童写真</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/摄影3.png">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">水纹与化妆品</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">服务支持</a>
+									<div class="mega-menu box rounded-bottom mega-menu_nav">
+										<div class="row justify-content-center align-items-center">
+												<div class="col-lg-1 center-center py-5">
+													<a href="/home/warrantyregulations">保修条例</a>
+												</div>
+												<div class="col-lg-1 center-center py-5">
+													<a href="/home/download">下载支持</a>
+												</div>
+										</div>
+                                     </div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">关于平行世界</a>
+									<div class="mega-menu box rounded-bottom mega-menu_nav">
+										<div class="row justify-content-center align-items-center">
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/newslist">新闻中心 </a>
+											</div>
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/about?title=关于平行世界">品牌故事</a>
+											</div>
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/visualgallerylist">视觉图库</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<!-- Navigation End -->
+						<a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="m-b-5 m-t-80"><p><a href="../index.html">点击返回主页</a></p></section>
+
+
+
+	<section class="m-b-0 p-t-25 p-b-25">
+        <div class="content">
+            <div class="container">
+				<h3 class="text-center text-warning">活着</h3>
+                <div class="row text-center overflow-hidden section_bg_img" style="border-radius: 0;">
+					<textarea>
+						很多人可能不止一次问过自己: 生而为人，到底是为什么而活着？
+
+工作的压力，家庭的重担，社会的责任……让你对生命充满了疑惑和疲倦，而那种想突破又无能为力的压迫感，是不是让你开始思考活着的意义？
+
+那么，朋友，静下来，看看余华的《活着》吧。也许，能给你启发和彻悟。
+
+这本书主要讲述了徐福贵坎坷而磨难的一生。
+
+当然，这是在我们眼中。
+
+主人公富贵在讲述自己的故事的时候，丝毫没有觉得自己生活有多悲惨，他甚至是欢喜的，幸福的。
+
+01
+
+富家少爷富贵，年轻时做事荒唐，吃喝嫖赌样样精通。在他无节制的挥霍下，祖上留下来的一百多亩田地，被他输了个精光。
+
+父亲被他活活气死之后，他开始反省自己的所作所为，决定好好过日子。
+
+母亲也劝慰他“人只要活得高兴，穷也不怕。”
+
+从“衣来伸手，饭来张口”的地主少爷，到亲自耕地种田的佃户。富贵的命运发生了天翻地覆的变化。
+
+可是善良贤惠的妻子家珍，却对他不离不弃。
+
+家珍是城里米行陈老板的女儿，长得特别漂亮。富贵对她是一见钟情。
+
+富贵生活潦倒之后，家珍并没有弃他而去，很好的诠释了“同甘共苦”的含义。
+
+“我也不想要什么福分，只求每年都给你做一双新鞋”。
+
+多么朴实的情分啊！
+
+如今的婚姻，感情还余几分？房子、车子、票子成了婚姻的拦路虎，又有多少人，不得不屈服在他的淫威下？
+
+这也许就是富贵历经种种磨难，还能乐观面对的原因吧。
+
+02
+
+生命无常，别奢求太多。
+
+龙二，就是坑害富贵输掉家产的、假仁假义的大金牙。
+
+他恐怕做梦都没想到“福兮祸所依，祸兮福所倚”这句话。
+
+他买了富贵家的地契房产，代替了富贵曾经的地主身份，摇身一变成为了地主“老爷”。
+
+看着曾经神气的不得了的富贵少爷，在他面前低身下气地问好。心里应该是满足而骄傲的。
+
+可惜好景不长，土地改革之时，他不能认清形式，不给与配合，成了地主恶霸。
+
+倒霉的龙二被押到刑场枪毙了，竟然挨了五枪。用他自己的话说“富贵，我是替你去死啊”。
+
+春生，是富贵被抓壮丁时，在战场认识的一个小伙，人很机灵。
+
+在别人都冒着生命危险去争抢大饼时，他却能想到扒别人的靴子做燃料(当时是有米无柴）。
+
+富贵和春生可谓是生死之交，只是谁也没想到，命运之神就是那样捉弄人。
+
+富贵一心牵挂着母亲和妻儿，所以毫不犹豫地选择了回家。过着吃不饱穿不暖的苦日子。
+
+即便如此，富贵还是把有庆送去城里里读书。
+
+不幸的是，有庆在给校长输血的时候，竟被无良又冷酷的医生把血给抽干了，以至于死在冰冷的医院。
+
+别说富贵当时发疯似的找医生拼命，就是我都看得咬牙切齿，这得有多狠的心呀，视人命如草芥。
+
+而那还是一个十二岁的，严重营养不良的孩子。
+
+人性就是这样，天平永远倾斜于位高权重者，社会底层人士的喜怒哀乐他们才不会管。
+
+而春生，则选择了参加解放军，后来立了功，当上了县长。
+
+他的老婆就是有庆学校的校长。
+
+春生算是欠了富贵儿子一条命。
+
+看到这里，你肯定会一声叹息，人的命运，冥冥之中似乎早就注定。
+
+不不，我要说的是，《活着》就是要给你一个又一个的意外，一次又一次的反转。
+
+在被批斗的日子，春生因为无法忍受无穷无尽的精神和肉体的双重折磨，上吊自尽了……
+
+其实，富贵是一个活的特别通透的人。
+
+他说“龙二和春生，他们也只是风光了一阵子，到头来命都丢了。做人还是平常点好，争这个，争那个，争来争去赔了自己的命。”
+
+所以说啊，别把得失看的太重。
+
+你看到了开头，却未必猜得出结尾。
+
+03
+
+故事到这儿当然没有结束。
+
+有庆死了之后，家珍的软骨病越来越严重。
+
+聪明乖巧的凤霞，虽然不能说话了，却嫁给了疼她，爱她，怜她的万二喜。
+
+富贵和家珍是看在眼里，喜在心头。他们最放心不下的女儿，终于有了个好归宿。
+
+奈何天意弄人，凤霞生孩子的时候大出血，死在了当年有庆出事的医院。
+
+女儿的离世，成了压垮家珍性命的最后一根稻草。随之也撒手人寰。
+
+似乎是为了惩罚富贵年轻时的荒唐。
+
+悲剧到此并未结束，不久之后，二喜被楼板砸中，留下了可怜的儿子——苦根。
+
+富贵把苦根接回乡下，祖孙相依为命，日子清苦却也快乐。
+
+苦根生病的日子，富贵心疼孩子，摘了半锅新鲜的豆子煮给孩子吃。谁知啊，孩子竟被撑死了……
+
+可是，日子还要过下去，富贵买来了一头老牛，这头老牛也叫“富贵”。
+
+此去经年，他们成了彼此生命里的唯一。
+
+那么，活着的意义究竟是什么呢？
+
+——“人是为活着本身而活着，而不是为了活着之外的任何事物所活着。”
+
+我想，生命的意义就在于此吧。
+
+
+					</textarea>
+                </div>
+             </div>
+         </div>
+    </section>
+
+	<footer class="footer p-t-50 bg_black">
+		<div class="container">
+			<div class="row m-b-10 offset-1">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">热门产品</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="#"><span>个人网页</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">服务支持</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="#"><span>服务条例</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">关于平行世界</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="关于平行世界.html"><span>公司简介</span></a></li>
+					</ul>
+
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-12">
+					<h6 class="m-b-10">联系电话</h6>
+					<div class="address">
+						<p>13925387652</p>
+						<p><span>服务时间：</span><br>9:00-17:00</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">关注平行世界</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="javascript:void(0);" role="button" tabindex="0" data-trigger="focus" data-toggle="popover" data-html="true" title="" data-placement="right" data-content="<img src='static/img/wx.jpg' alt='weixin' width=100px>" data-original-title="官方微信"><span>官方微信</span></a> </li>
+						<li><a href="https://aiparallelworld.pages.dev/"><span>官方微博</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright text-center">
+						&copy; 2024 All Rights Reserved. 中山市平行世界科技发展有限公司<a style=" color: #5d5d5d" href="https://beian.miit.gov.cn/" target="_blank">  粤ICP备20240618618号 </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer></footer>
+
+
+	<!-- jQuery -->
+	<script src="../static/js/jquery-2.1.0.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../static/js/popper.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<!-- Plugins -->
+	<script src="../static/js/scrollreveal.min.js"></script>
+	<script src="../static/js/parallax.min.js"></script>
+	<!-- Global Init -->
+    <script src="../static/js/global.js"></script>
+	<script>
+        $(function () {
+            //导航鼠标横向滑动
+            var container = document.querySelector(".nav_of_x");
+            container.addEventListener("wheel", (event) => {
+                event.preventDefault();
+                container.scrollLeft += event.deltaY;
+                console.log("wheel" + event.deltaY);
+            });
+
+            //轮播图
+            $('.carousel').carousel({
+                interval: 5000
+            });
+            //微信弹窗
+            $(function () {
+                $('[data-toggle="popover"]').popover();
+            })
+
+			// Srearch
+			$('li.search i').click(function () {
+				if ($('nav .search-box').is(":visible")) {
+					$('nav .search-box').fadeOut(300);
+				} else {
+					$('nav .search-box').fadeIn(300);
+					$('nav .search-box form input').focus();
+				}
+			});
+        })
+    </script>
+
+</body>
+</html>

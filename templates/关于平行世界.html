@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>关于平行世界</title>
+
+    <!-- Bootstrap & Plugins CSS -->
+	<link rel="stylesheet" href="/static/css/aiparallelworld.css">
+	<link rel="stylesheet" href="../static/plugins/fontawesome-free-6.5.1-web/css/fontawesome.css">
+	<link rel="stylesheet" href="../static/plugins/fontawesome-free-6.5.1-web/css/brands.css">
+	<link rel="stylesheet" href="../static/plugins/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/css/theme.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+
+<body>
+	<header	class="main-nav-container box bg_bo">
+		<div class="container-fluid px-md-0">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-nav">
+						<!-- Logo Start -->
+						<a href="https://baidu.com" class="logo pull-left d-flex align-items-center p-l-100_md">
+							<img  class="img-fluid" src="../static/img/logo.png" alt="">
+						</a>
+						<!-- Logo End -->
+						<div class="nav pull-right d-flex p-r-50 align-items-center h-80">
+							<div class="search">
+								<span><i class="fa-brands fa-searchengin"></i> </span>
+								<div class="search_box d-flex justify-content-center align-items-center box" style="">
+									<div class="col-lg-4 col-8">
+                                        <form id="form" method="get" class="form-inline" name="headfForm" role="form">
+                                            <input type="text" class="form-control w-100 rounded-pill" id="ky" onkeyup="keyEvent(event);" autocomplete="off" onkeydown="if(event.keyCode==13){window.location = '/home/search?ky=' + this.value;;return false};"  placeholder="请输入关键字...">
+                                            <div id="headsuggestion_div" class="hide">
+                                                <ul id="headsuggestions_ul"></ul>
+                                            </div>
+                                        </form>
+                                    </div>
+								</div>
+						</div>
+						</div>
+						<!-- Navigation Start -->
+						<nav  class="menu h-80">
+							<ul class="menu-container list-unstyled d-flex align-items-center justify-content-center">
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">个人网站</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/摄影.png">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">摄影人生</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/个人简历网站.png">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">个人简历</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">企业网站</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/简洁大气响应式化妆品生物科技公司网站.jpg">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">简洁大气响应式化妆品生物科技公司网站</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/大气宽屏响应式网络科技公司官网.jpg">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">大气宽屏响应式网络科技公司官网</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">网络建设与维护</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/小企业网络设计拓扑图.jpg">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">小企业网络设计拓扑图</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/大型网络设计建设.jpg">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">大型网络设计拓扑图</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">AI绘画</a>
+									<div class="mega-menu box rounded-bottom ">
+										<div class=" py-3 nav_of_x justify-content-center">
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+															<div class="vp-head-product-img-2-2">
+																<img alt="" class="" src="../static/img/摄影2.png">
+															</div>
+															<div class="vp-head-product-img-2-1">
+																<img alt="" class="" src="#">
+															</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">儿童写真</h5>
+													</a>
+												</div>
+											</div>
+											<div class="overflow-hidden p-10 vp-head">
+												<a href="#">
+													<div class="vp-head-product-img-2">
+														<div class="vp-head-product-img-2-2">
+															<img alt="" class="" src="../static/img/摄影3.png">
+														</div>
+													</div>
+												</a>
+												<div class="p-t-10 w-100 text-center">
+													<a href="#">
+														<h5 class="text-color-heading d-block">水纹与化妆品</h5>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-center">
+											<div class="col-4 center-center p-b-10">
+												<a href="#" class="button button-reset d-block">更多产品</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">服务支持</a>
+									<div class="mega-menu box rounded-bottom mega-menu_nav">
+										<div class="row justify-content-center align-items-center">
+												<div class="col-lg-1 center-center py-5">
+													<a href="/home/warrantyregulations">保修条例</a>
+												</div>
+												<div class="col-lg-1 center-center py-5">
+													<a href="/home/download">下载支持</a>
+												</div>
+										</div>
+                                     </div>
+								</li>
+								<li class="menu-item open-mega-menu">
+									<a class="nav-link" href="javascript:;">关于平行世界</a>
+									<div class="mega-menu box rounded-bottom mega-menu_nav">
+										<div class="row justify-content-center align-items-center">
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/newslist">新闻中心 </a>
+											</div>
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/about?title=关于平行世界">品牌故事</a>
+											</div>
+											<div class="col-lg-1 center-center py-5">
+												<a href="/home/visualgallerylist">视觉图库</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<!-- Navigation End -->
+						<a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="m-b-5 m-t-80"><p><a href="../index.html">点击返回主页</a></p></section>
+
+	<section class="m-b-5 m-t-80_sm">
+		<div class="bd-example">
+			<div id="slide1" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+						<li data-target="#slide1" data-slide-to="0" class="'active'"></li>
+						<li data-target="#slide1" data-slide-to="1" class=""></li>
+						<li data-target="#slide1" data-slide-to="2" class="active"></li>
+						<li data-target="#slide1" data-slide-to="3" class=""></li>
+				</ol>
+				<div class="carousel-inner">
+
+						<div class="carousel-item active">
+							<a href="#"><img src="../static/img/平行世界2.jpg" class="d-block w-100" alt="..."></a>
+							<div class="carousel-caption1 ">
+								<h2 class="text-white m-t-130">
+								<a href="/templates/平行世界.html" class="button button-white d-block">什么是平行世界？</a>
+								</h2>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a><img src="../static/img/活着4.jpg" class="d-block w-100" alt="..."></a>
+							<div class="carousel-caption1">
+								<h2 class="text-color-primary">背后的故事</h2>
+								<p class="p-t-10 p-b-20"></p>
+								<a class="button button-white d-block">了解详情</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a><img src="../static/img/银河系2.jpg" class="d-block w-100" alt="..."></a>
+							<div class="carousel-caption1">
+								<h2 class="text-white">FLUX</h2>
+								<p class="p-t-10 p-b-20"></p>
+								<a class="button button-white d-block">了解详情</a>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<a href="#"><img src="../static/img/我不是药神3.jpg" class="d-block w-100" alt="..."></a>
+							<div class="carousel-caption1 ">
+								<h2 class="text-white"></h2>
+								<p class="p-t-10 p-b-20"></p>
+								<a href="/home/我不是药神.html" class="button button-white d-block">背后的故事</a>
+							</div>
+						</div>
+				</div>
+				<a class="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#slide1" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="m-b-0 p-t-25 p-b-25">
+        <div class="content">
+            <div class="container">
+				<h3 class="text-center text-warning">关于平行世界</h3>
+                <div class="row text-center overflow-hidden section_bg_img">
+					<p>岁月从不饶人，时间在不经意中流逝，转瞬间，来到人生后半段，身边陆续有亲朋好友离开人世！但愿真的有一个灵魂世界，他（她）们会永远无忧无虑地活着。
+						也许，您会发现，纪念最好的方式，是将他（她）的此生记录下来，留给世间，留给后人，那段属于他（她）的尘世故事！<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;平凡人留存人世间的痕迹，不过百年，随着时间的流逝，150年后，也许就尘归尘土归土，了无痕迹。平行世界成立的初衷就是为了记录那些美好的故事，
+						让美好的故事在网络世界里面一直留存下去。<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;企业使命：为每一个希望保存自己或亲人，在人世间尝尽的酸甜苦辣的客户，提供专业、永久的网站设计建设维护服务。
+						同时，也为企业客户提供专业、高效、创新的企业网站设计建设维护服务，助力企业数字化转型，提升品牌形象，满足企业不断变化的需求。
+
+					</p>
+                </div>
+             </div>
+         </div>
+    </section>
+
+	<footer class="footer p-t-50 bg_black">
+		<div class="container">
+			<div class="row m-b-10 offset-1">
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">热门产品</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="#"><span>个人网页</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">服务支持</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="#"><span>服务条例</span></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">关于平行世界</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="关于平行世界.html"><span>公司简介</span></a></li>
+					</ul>
+
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-12">
+					<h6 class="m-b-10">联系电话</h6>
+					<div class="address">
+						<p>13925387652</p>
+						<p><span>服务时间：</span><br>9:00-17:00</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-6 col-6">
+					<h6 class="m-b-10">关注平行世界</h6>
+					<ul class="footer-nav list-unstyled">
+						<li><a href="javascript:void(0);" role="button" tabindex="0" data-trigger="focus" data-toggle="popover" data-html="true" title="" data-placement="right" data-content="<img src='static/img/wx.jpg' alt='weixin' width=100px>" data-original-title="官方微信"><span>官方微信</span></a> </li>
+						<li><a href="https://aiparallelworld.pages.dev/"><span>官方微博</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="copyright text-center">
+						&copy; 2024 All Rights Reserved. 中山市平行世界科技发展有限公司<a style=" color: #5d5d5d" href="https://beian.miit.gov.cn/" target="_blank">  粤ICP备20240618618号 </a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer></footer>
+
+
+	<!-- jQuery -->
+	<script src="../static/js/jquery-2.1.0.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="../static/js/popper.js"></script>
+	<script src="../static/js/bootstrap.min.js"></script>
+	<!-- Plugins -->
+	<script src="../static/js/scrollreveal.min.js"></script>
+	<script src="../static/js/parallax.min.js"></script>
+	<!-- Global Init -->
+    <script src="../static/js/global.js"></script>
+	<script>
+        $(function () {
+            //导航鼠标横向滑动
+            var container = document.querySelector(".nav_of_x");
+            container.addEventListener("wheel", (event) => {
+                event.preventDefault();
+                container.scrollLeft += event.deltaY;
+                console.log("wheel" + event.deltaY);
+            });
+
+            //轮播图
+            $('.carousel').carousel({
+                interval: 5000
+            });
+            //微信弹窗
+            $(function () {
+                $('[data-toggle="popover"]').popover();
+            })
+
+			// Srearch
+			$('li.search i').click(function () {
+				if ($('nav .search-box').is(":visible")) {
+					$('nav .search-box').fadeOut(300);
+				} else {
+					$('nav .search-box').fadeIn(300);
+					$('nav .search-box form input').focus();
+				}
+			});
+        })
+    </script>
+
+</body>
+</html>
